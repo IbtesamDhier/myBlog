@@ -1,3 +1,28 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto
+}
+
+.article-title {
+	text-align: center;
+	text-transform: capitalize;
+	color: #0d0f3b;
+	font-family:  Itim , sans-serif;
+}
+
+.article-body {
+	text-align: justify;
+	text-align-last: center;
+	font-family: "TradeGothicNextW01-Ligh 693250";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #4a4a4a;
+    font-style: normal;
+    font-stretch: normal;
+}
