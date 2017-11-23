@@ -1,3 +1,55 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #0d0f3b;
+}
+
+.navbar-default .navbar-brand {
+    color : #b3aeab;
+    font-family:    Spirax  , sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color : #b3aeab;
+    font-family:  Itim , sans-serif;
+    font-size: 17px;
+    -webkit-transition: color .5s;
+            transition: color .5s;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
+/*site footer*/
+
+.site-footer {
+    color: #b3aeab;
+    background-color: #0d0f3b;
+    padding: 20px 15px;
+}
+
+.site-footer .fa {
+    font-size: 1.5em;
+    -webkit-transition: color .5s;
+            transition: color .5s;
+
+}
+
+.site-footer .fa:hover {
+    color: #fff;
+}
+
