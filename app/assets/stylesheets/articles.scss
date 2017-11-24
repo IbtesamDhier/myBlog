@@ -77,13 +77,13 @@ img-responsive {
 background-color: transparent;
 }
 
-.showing-articles{
-	padding-left: -15px;
-	padding-right: -15px;
+.carousel {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .carousel-caption {
-    bottom: 33%;
+    bottom: 42%;
     background-color: rgba(155, 159, 168, 0.41);
     width: 41%;
     margin: 0 auto;
@@ -93,7 +93,7 @@ background-color: transparent;
 .carousel-caption h3 {
     font-family: 'Itim', serif;
     font-size: 3.5em;
-    color: #000;
+    color: #fff;
     letter-spacing: 3px;
     font-weight: bold;
 }
@@ -109,7 +109,7 @@ background-color: transparent;
 
 .carousel-inner > .item > a > img{
     width: 100%;
-    height: 700px;
+    height: 655px;
 }
 
 .form-label {
@@ -137,7 +137,26 @@ background-color: transparent;
 
 	.article {
 	padding-top: 60px;
+	}
 }
-}
+
+@media (max-width: 480px) {
+
+    .carousel-caption h3 {
+        font-size: 2em;
+    }
+
+    .carousel-caption {
+        width: 50%;
+        padding-bottom: 0;
+        padding-top: 0;
+        bottom: 35%;
+    }
+
+  .carousel-inner > .item > a > img {
+      height: 300px;
+  }
+
+}  
     
 
