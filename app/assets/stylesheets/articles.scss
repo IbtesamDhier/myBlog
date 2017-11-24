@@ -9,6 +9,10 @@
     padding: 40px 0  20px;
 }
 
+.header h1 {
+	font-size: 3.86em;
+}
+
 img-responsive {
 	display: block;
 	max-width: 100%;
@@ -45,3 +49,60 @@ img-responsive {
 	-webkit-transform: scale(.95);
   transform: scale(.95);
 }
+
+.personalize {
+	width: 100%;
+	font-family:  Itim , sans-serif;
+	color: #0d0f3b;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+.contact-touch {
+	font-family:  Itim , sans-serif;
+	color: #0d0f3b;
+}
+
+.contact-touch h2 {
+	color: #286090;
+}
+
+.social-media a{
+	font-size: 2.1em;
+}
+
+.jumbotron {
+background-color: transparent;
+}
+
+.form-label {
+	font-size: 14px;
+	color: #286090;
+}
+
+
+.centered {
+	text-align: center;
+}
+
+/*@media*/
+@media (min-width: 768px) {
+
+    .show-article-title {
+		text-align: left;
+		font-size: 20px;
+	}
+
+	.article-body {
+		font-size: 12px;
+		text-align-last: auto;
+	}
+
+	.article {
+	padding-top: 60px;
+}
+}
+    
+

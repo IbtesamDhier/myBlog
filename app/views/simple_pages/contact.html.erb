@@ -1,2 +1,44 @@
-<h1>SimplePages#contact</h1>
-<p>Find me in app/views/simple_pages/contact.html.erb</p>
+
+<section class="container-fluid">
+	<div class="jumbotron">
+		<div class="row centered">
+			<div class="col-sm-6 personalize">
+          		<h2>Where to find us</h2>
+          		<p>We operate from a lovely office in the heart of Gaza.</p>
+        	</div>
+        	<div class="col-sm-6 contact-form">
+          		<%= form_with(url: "/static_pages/thank_you", local: true) do |form| %>
+
+        			<div class="form-group">
+          				<%= form.label :name, class: 'form-label' %>
+          				<%= form.text_field :name, class: "form-control", placeholder: "Your Name", :required => true, title: 'Please fill your name here'%>
+        			</div>  
+
+        			<div class="form-group">
+          				<%= form.label :email, "Email Address", class: 'form-label' %>
+          				<%= form.text_field :email, class: "form-control", placeholder: "Your Email", type:"email", :required => true, title: "required (example@hotmail.com)" %>
+        			</div>
+
+        			<div class="form-group">
+          				<%= form.label :message, class: 'form-label' %>
+          				<%= form.text_area :message, class: "form-control", placeholder: "Your Message", :required => true, title: "Fill a message (required)" %>
+        			</div>
+
+        			<div class="actions">
+            			<%= form.submit "Send Us a Message", class: 'btn btn-primary' %>   
+        			</div>
+
+      			<% end %>
+        	</div>
+        	<div class="col-sm-6 contact-touch">
+          		<h2>Stay in touch!</h2>
+          		<p>Follow us on our social media channels.</p>
+          		<ul class="list-inline social-media">
+          			<li><a href="#" style="color: #286090"><i class="fa fa-facebook-square" aria-hidden="true"></a></i></li>
+          			<li><a href="#" style="color: #286090"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          			<li><a href="#" style="color: #286090"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+      			</ul>
+        	</div>
+  		</div>
+	</div>
+</section>

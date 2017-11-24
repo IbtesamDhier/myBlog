@@ -12,7 +12,6 @@
         <a href="/articles/<%= article.id %>"><%= image_tag article.image_url, class: "img-responsive", alt: "article image"%></a>
           <a href="/articles/<%= article.id %>"><h3 class="article-title"><%= article.title %></h3></a>
           <p class="article-body"><%= article.body %></p>
-          <%= link_to 'Show', article %>
           <%= link_to 'Edit', edit_article_path(article) %>
           <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>

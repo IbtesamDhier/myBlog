@@ -2,13 +2,15 @@
 
 
 <section class="container">
-	<div class="row">
-		<div class="col-md-6 col-xs-12">
+	<div class="row article">
+		<div class="col-sm-6 col-xs-12">
 			<%= image_tag @article.image_url, class: "img-responsive", alt: "article image"%>
 		</div>
-		<div class="col-md-6 col-xs-12">
-			<h3 class="article-title"><%= @article.title %></h3>
-          	<p class="article-body"><%= @article.body %></p>
+		<div class="col-sm-6 col-xs-12">
+			<div class="article-content">
+				<h3 class="show-article-title"><%= @article.title %></h3>
+          		<p class="article-body"><%= @article.body %> <a href="#">Read more</a></p>
+			</div>
 		</div>
 	</div>
 </section>
