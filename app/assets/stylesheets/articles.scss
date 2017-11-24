@@ -100,11 +100,13 @@ background-color: transparent;
 
 .carousel-indicators .active {
     background-color: #286090;
+    border-color : #286090;
 }
 
 .carousel-indicators li {
     border-color: #0d0f3b;
     border-radius: 0;
+    background-color: #0d0f3b;
 }
 
 .carousel-inner > .item > a > img{
