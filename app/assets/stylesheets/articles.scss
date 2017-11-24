@@ -77,6 +77,41 @@ img-responsive {
 background-color: transparent;
 }
 
+.showing-articles{
+	padding-left: -15px;
+	padding-right: -15px;
+}
+
+.carousel-caption {
+    bottom: 33%;
+    background-color: rgba(155, 159, 168, 0.41);
+    width: 41%;
+    margin: 0 auto;
+}
+
+
+.carousel-caption h3 {
+    font-family: 'Itim', serif;
+    font-size: 3.5em;
+    color: #000;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.carousel-indicators .active {
+    background-color: #286090;
+}
+
+.carousel-indicators li {
+    border-color: #0d0f3b;
+    border-radius: 0;
+}
+
+.carousel-inner > .item > a > img{
+    width: 100%;
+    height: 700px;
+}
+
 .form-label {
 	font-size: 14px;
 	color: #286090;
