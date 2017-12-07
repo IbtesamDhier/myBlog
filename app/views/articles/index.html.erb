@@ -51,6 +51,7 @@
           <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     <% end %>
+    <%= will_paginate @articles %>
   </div>
   <%= link_to 'New Article', new_article_path %>
 
