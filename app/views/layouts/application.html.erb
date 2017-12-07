@@ -39,20 +39,26 @@
                     <li><%= link_to 'Articles', articles_path %></li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
-  <li>
-  <% if user_signed_in? %>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-  <% else %>
-    <%= link_to('Login', new_user_session_path) %>
-  <% end %>
-  </li>
-</ul>
+                    <li>
+                       <% if user_signed_in? %>
+                        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                       <% else %>
+                        <%= link_to('Login', new_user_session_path) %>
+                       <% end %>
+                    </li>
+                </ul>
                 
             </div> <!-- end navbar-collaps -->
         </div> <!-- end nav container-->
     </nav>
 
-    <p class="notice"><%= notice %></p>
+    <!-- Flash Notice Tags -->
+    <% if notice %>
+      <div id="notice" class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div id="alert" class="alert alert-danger"><%= alert %></div>
+    <% end %>
 
     <%= yield %>
 
@@ -60,5 +66,24 @@
         Copyright &copy; 2017 Ibtesam DH
     </footer>
 
+
+<script type="text/javascript">
+     $('.rating').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    scoreName: 'comment[rating]'
+  });
+  $('.rated').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+  
+</script>
   </body>
 </html>

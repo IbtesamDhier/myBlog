@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+before_action :authenticate_user! , except: %i[index show]
+  load_and_authorize_resource except: %i[index show]
 
   # GET /articles
   # GET /articles.json
@@ -10,6 +12,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @comments = @article.comments.order("created_at DESC")
   end
 
   # GET /articles/new
